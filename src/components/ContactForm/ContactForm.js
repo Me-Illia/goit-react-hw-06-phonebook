@@ -47,6 +47,7 @@ const ContactForm = () => {
         Name
         <input
           name="name"
+          value={name}
           type="text"
           onChange={handleChange}
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -59,6 +60,7 @@ const ContactForm = () => {
         Number
         <input
           type="tel"
+          value={number}
           name="number"
           onChange={handleChange}
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
